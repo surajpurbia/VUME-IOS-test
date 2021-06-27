@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA3345D067D4F32127BE1AB /* Pods_VUME_IOS_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B497C813CEADA736E5672BC /* Pods_VUME_IOS_test.framework */; };
+		D79958862688B5FA0051B9E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958852688B5FA0051B9E6 /* AppDelegate.swift */; };
+		D79958882688B5FA0051B9E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958872688B5FA0051B9E6 /* SceneDelegate.swift */; };
+		D799588A2688B5FA0051B9E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958892688B5FA0051B9E6 /* ViewController.swift */; };
+		D799588D2688B5FA0051B9E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D799588B2688B5FA0051B9E6 /* Main.storyboard */; };
+		D799588F2688B5FD0051B9E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D799588E2688B5FD0051B9E6 /* Assets.xcassets */; };
+		D79958922688B5FD0051B9E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79958902688B5FD0051B9E6 /* LaunchScreen.storyboard */; };
+		D799589A2688D9700051B9E6 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958992688D9700051B9E6 /* DashboardViewController.swift */; };
+		D799589E2688D9AA0051B9E6 /* AppSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D799589D2688D9AA0051B9E6 /* AppSessionManager.swift */; };
+		D79958A02688D9CF0051B9E6 /* FetchRummyTableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D799589F2688D9CF0051B9E6 /* FetchRummyTableRequest.swift */; };
+		D79958A22688D9E10051B9E6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958A12688D9E10051B9E6 /* NetworkRequest.swift */; };
+		D79958A42688DA020051B9E6 /* NetworkRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958A32688DA020051B9E6 /* NetworkRequestConvertible.swift */; };
+		D79958A62688DA160051B9E6 /* NetworkRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958A52688DA160051B9E6 /* NetworkRequestType.swift */; };
+		D79958A82688DA250051B9E6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958A72688DA250051B9E6 /* NetworkManager.swift */; };
+		D79958AA2688DA4D0051B9E6 /* NetworkManager+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958A92688DA4D0051B9E6 /* NetworkManager+Table.swift */; };
+		D79958AC2688DA600051B9E6 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958AB2688DA600051B9E6 /* ErrorManager.swift */; };
+		D79958AE2688DA770051B9E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958AD2688DA770051B9E6 /* Constants.swift */; };
+		D79958B92688DDD50051B9E6 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958B82688DDD50051B9E6 /* DashboardViewModel.swift */; };
+		D79958BC2688E3A10051B9E6 /* TableResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958BB2688E3A10051B9E6 /* TableResult.swift */; };
+		D79958BF2689068E0051B9E6 /* DashboardTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79958BE2689068E0051B9E6 /* DashboardTableCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B497C813CEADA736E5672BC /* Pods_VUME_IOS_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUME_IOS_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2722976BC3DFB9C5BA25C759 /* Pods-VUME IOS test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUME IOS test.debug.xcconfig"; path = "Target Support Files/Pods-VUME IOS test/Pods-VUME IOS test.debug.xcconfig"; sourceTree = "<group>"; };
+		63D89DC5B597F77D58EDAB9B /* Pods-VUME IOS test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUME IOS test.release.xcconfig"; path = "Target Support Files/Pods-VUME IOS test/Pods-VUME IOS test.release.xcconfig"; sourceTree = "<group>"; };
+		D79958822688B5FA0051B9E6 /* VUME IOS test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VUME IOS test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79958852688B5FA0051B9E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D79958872688B5FA0051B9E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D79958892688B5FA0051B9E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D799588C2688B5FA0051B9E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D799588E2688B5FD0051B9E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D79958912688B5FD0051B9E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D79958932688B5FD0051B9E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D79958992688D9700051B9E6 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		D799589D2688D9AA0051B9E6 /* AppSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSessionManager.swift; sourceTree = "<group>"; };
+		D799589F2688D9CF0051B9E6 /* FetchRummyTableRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRummyTableRequest.swift; sourceTree = "<group>"; };
+		D79958A12688D9E10051B9E6 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		D79958A32688DA020051B9E6 /* NetworkRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestConvertible.swift; sourceTree = "<group>"; };
+		D79958A52688DA160051B9E6 /* NetworkRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestType.swift; sourceTree = "<group>"; };
+		D79958A72688DA250051B9E6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D79958A92688DA4D0051B9E6 /* NetworkManager+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Table.swift"; sourceTree = "<group>"; };
+		D79958AB2688DA600051B9E6 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		D79958AD2688DA770051B9E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D79958B82688DDD50051B9E6 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		D79958BB2688E3A10051B9E6 /* TableResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableResult.swift; sourceTree = "<group>"; };
+		D79958BE2689068E0051B9E6 /* DashboardTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D799587F2688B5FA0051B9E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA3345D067D4F32127BE1AB /* Pods_VUME_IOS_test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		292FFDA42196701580D86B5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2722976BC3DFB9C5BA25C759 /* Pods-VUME IOS test.debug.xcconfig */,
+				63D89DC5B597F77D58EDAB9B /* Pods-VUME IOS test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D79958792688B5FA0051B9E6 = {
+			isa = PBXGroup;
+			children = (
+				D79958842688B5FA0051B9E6 /* VUME IOS test */,
+				D79958832688B5FA0051B9E6 /* Products */,
+				292FFDA42196701580D86B5F /* Pods */,
+				DE0D11FC04F46FD7F90E4AF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D79958832688B5FA0051B9E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79958822688B5FA0051B9E6 /* VUME IOS test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79958842688B5FA0051B9E6 /* VUME IOS test */ = {
+			isa = PBXGroup;
+			children = (
+				D79958852688B5FA0051B9E6 /* AppDelegate.swift */,
+				D79958872688B5FA0051B9E6 /* SceneDelegate.swift */,
+				D79958BA2688DF1F0051B9E6 /* ViewModel */,
+				D79958B32688DB350051B9E6 /* View */,
+				D79958B12688DB060051B9E6 /* Network */,
+				D79958B22688DB1E0051B9E6 /* Utilities */,
+				D79958BD2688EF950051B9E6 /* Model */,
+				D799588B2688B5FA0051B9E6 /* Main.storyboard */,
+				D799588E2688B5FD0051B9E6 /* Assets.xcassets */,
+				D79958902688B5FD0051B9E6 /* LaunchScreen.storyboard */,
+				D79958932688B5FD0051B9E6 /* Info.plist */,
+			);
+			path = "VUME IOS test";
+			sourceTree = "<group>";
+		};
+		D79958AF2688DACC0051B9E6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D79958A32688DA020051B9E6 /* NetworkRequestConvertible.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D79958B02688DAF30051B9E6 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D799589F2688D9CF0051B9E6 /* FetchRummyTableRequest.swift */,
+				D79958A12688D9E10051B9E6 /* NetworkRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D79958B12688DB060051B9E6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D79958B02688DAF30051B9E6 /* Request */,
+				D79958AF2688DACC0051B9E6 /* Protocol */,
+				D799589D2688D9AA0051B9E6 /* AppSessionManager.swift */,
+				D79958A52688DA160051B9E6 /* NetworkRequestType.swift */,
+				D79958A72688DA250051B9E6 /* NetworkManager.swift */,
+				D79958A92688DA4D0051B9E6 /* NetworkManager+Table.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D79958B22688DB1E0051B9E6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D79958AB2688DA600051B9E6 /* ErrorManager.swift */,
+				D79958AD2688DA770051B9E6 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D79958B32688DB350051B9E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D79958892688B5FA0051B9E6 /* ViewController.swift */,
+				D79958B52688DB4C0051B9E6 /* ViewController */,
+				D79958B42688DB450051B9E6 /* cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D79958B42688DB450051B9E6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				D79958BE2689068E0051B9E6 /* DashboardTableCollectionViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		D79958B52688DB4C0051B9E6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D79958992688D9700051B9E6 /* DashboardViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D79958BA2688DF1F0051B9E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D79958B82688DDD50051B9E6 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D79958BD2688EF950051B9E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D79958BB2688E3A10051B9E6 /* TableResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE0D11FC04F46FD7F90E4AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B497C813CEADA736E5672BC /* Pods_VUME_IOS_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D79958812688B5FA0051B9E6 /* VUME IOS test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79958962688B5FD0051B9E6 /* Build configuration list for PBXNativeTarget "VUME IOS test" */;
+			buildPhases = (
+				FE84EBE95F06C96669F9B13C /* [CP] Check Pods Manifest.lock */,
+				D799587E2688B5FA0051B9E6 /* Sources */,
+				D799587F2688B5FA0051B9E6 /* Frameworks */,
+				D79958802688B5FA0051B9E6 /* Resources */,
+				EB6CF226147D1F1D2C11BF6D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VUME IOS test";
+			productName = "VUME IOS test";
+			productReference = D79958822688B5FA0051B9E6 /* VUME IOS test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D799587A2688B5FA0051B9E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D79958812688B5FA0051B9E6 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = D799587D2688B5FA0051B9E6 /* Build configuration list for PBXProject "VUME IOS test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D79958792688B5FA0051B9E6;
+			productRefGroup = D79958832688B5FA0051B9E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79958812688B5FA0051B9E6 /* VUME IOS test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D79958802688B5FA0051B9E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79958922688B5FD0051B9E6 /* LaunchScreen.storyboard in Resources */,
+				D799588F2688B5FD0051B9E6 /* Assets.xcassets in Resources */,
+				D799588D2688B5FA0051B9E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB6CF226147D1F1D2C11BF6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VUME IOS test/Pods-VUME IOS test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VUME IOS test/Pods-VUME IOS test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VUME IOS test/Pods-VUME IOS test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE84EBE95F06C96669F9B13C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VUME IOS test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D799587E2688B5FA0051B9E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D799589E2688D9AA0051B9E6 /* AppSessionManager.swift in Sources */,
+				D79958AA2688DA4D0051B9E6 /* NetworkManager+Table.swift in Sources */,
+				D79958AC2688DA600051B9E6 /* ErrorManager.swift in Sources */,
+				D79958A42688DA020051B9E6 /* NetworkRequestConvertible.swift in Sources */,
+				D79958A62688DA160051B9E6 /* NetworkRequestType.swift in Sources */,
+				D79958BC2688E3A10051B9E6 /* TableResult.swift in Sources */,
+				D799588A2688B5FA0051B9E6 /* ViewController.swift in Sources */,
+				D79958A82688DA250051B9E6 /* NetworkManager.swift in Sources */,
+				D79958BF2689068E0051B9E6 /* DashboardTableCollectionViewCell.swift in Sources */,
+				D79958B92688DDD50051B9E6 /* DashboardViewModel.swift in Sources */,
+				D79958A22688D9E10051B9E6 /* NetworkRequest.swift in Sources */,
+				D79958862688B5FA0051B9E6 /* AppDelegate.swift in Sources */,
+				D79958882688B5FA0051B9E6 /* SceneDelegate.swift in Sources */,
+				D799589A2688D9700051B9E6 /* DashboardViewController.swift in Sources */,
+				D79958AE2688DA770051B9E6 /* Constants.swift in Sources */,
+				D79958A02688D9CF0051B9E6 /* FetchRummyTableRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D799588B2688B5FA0051B9E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D799588C2688B5FA0051B9E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D79958902688B5FD0051B9E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79958912688B5FD0051B9E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D79958942688B5FD0051B9E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D79958952688B5FD0051B9E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D79958972688B5FD0051B9E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2722976BC3DFB9C5BA25C759 /* Pods-VUME IOS test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VUME IOS test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "suraj.VUME-IOS-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D79958982688B5FD0051B9E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D89DC5B597F77D58EDAB9B /* Pods-VUME IOS test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VUME IOS test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "suraj.VUME-IOS-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D799587D2688B5FA0051B9E6 /* Build configuration list for PBXProject "VUME IOS test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79958942688B5FD0051B9E6 /* Debug */,
+				D79958952688B5FD0051B9E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79958962688B5FD0051B9E6 /* Build configuration list for PBXNativeTarget "VUME IOS test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79958972688B5FD0051B9E6 /* Debug */,
+				D79958982688B5FD0051B9E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D799587A2688B5FA0051B9E6 /* Project object */;
+}

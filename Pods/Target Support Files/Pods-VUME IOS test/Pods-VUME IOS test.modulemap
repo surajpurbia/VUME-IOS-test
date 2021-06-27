@@ -1,0 +1,6 @@
+framework module Pods_VUME_IOS_test {
+  umbrella header "Pods-VUME IOS test-umbrella.h"
+
+  export *
+  module * { export * }
+}
